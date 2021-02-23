@@ -20,6 +20,10 @@ public class Main {
         
         System.out.println("OPERATIVA BANCARIA"); // 2a versió
         System.out.println("------------------"); // 2a versió
+        
+        System.out.println("AUTOR: Gabriel Alzina Alomar"); // 3a versió
+        System.out.println("AUTOR: Gabriel Alzina Alomar"); // 3a versió
+        
 
         cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
