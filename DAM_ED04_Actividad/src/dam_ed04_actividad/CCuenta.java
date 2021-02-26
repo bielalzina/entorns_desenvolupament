@@ -52,10 +52,10 @@ public class CCuenta {
     /**
      * Constructor amb parametres
      * 
-     * @param nom . Nom del titular del compte 
-     * @param cue . Numero de compte
-     * @param sal . Saldo inicial
-     * @param tipo . Tipus interes
+     * @param nom Nom del titular del compte 
+     * @param cue Numero de compte
+     * @param sal Saldo inicial
+     * @param tipo Tipus interes
      */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
@@ -67,7 +67,7 @@ public class CCuenta {
     
     /**
      * Metode SET per assignar nom del titular al compte
-     * @param nom . Indicam nom del titular
+     * @param nom Nom del titular
      */
     public void asignarNombre(String nom)
     {
@@ -77,7 +77,7 @@ public class CCuenta {
     
     /**
      * Metode GET que retorna el nom del titular del compte
-     * @return 
+     * @return Nom del titular 
      */
     
     public String obtenerNombre()
@@ -88,7 +88,7 @@ public class CCuenta {
 
     /**
      * Metode GET que retorna el saldo del compte
-     * @return 
+     * @return Saldo del compte
      */
     public double estado()
     {
@@ -100,8 +100,8 @@ public class CCuenta {
     /**
      * Metode que ens permet ingressar dinners en el compte. Si l'ingres es 
      * correcte es suma al saldo existent
-     * @param cantidad . Indica l'import que volem ingressar
-     * @throws Exception  . Llença un excepció si ingressam un import negatiu
+     * @param cantidad Import a ingressar
+     * @throws Exception  Llença un excepció si pretenem ingressar un import negatiu
      */
     
     
@@ -116,9 +116,9 @@ public class CCuenta {
     /**
      * Metode que permet retirar dinners del compte. Si l'import a retirar compleix
      * els requisits es minora el saldo existent
-     * @param cantidad - Indica l'import que volem retirar
-     * @throws Exception  - Llença una excepció si volem retirar un import negatiu
-     * o volem retirar un import superior al saldo actual
+     * @param cantidad Import a retirar
+     * @throws Exception  Llença una excepció si pretenem retirar un import negatiu
+     * o retirar un import superior al saldo actual
      */
     
     public void retirar(double cantidad) throws Exception
@@ -133,7 +133,7 @@ public class CCuenta {
     
     /**
      * Metode GET que retorna el numero del compte
-     * @return 
+     * @return Numero del compte
      */
 
     public String obtenerCuenta()
@@ -144,7 +144,7 @@ public class CCuenta {
     
     /**
      * Metode GET que retorna el nom del titular del compte
-     * @return 
+     * @return Nom del tiular
      */
     public String getNombre() {
         return nombre;
@@ -152,7 +152,7 @@ public class CCuenta {
 
     /**
      * Metode SET per assignar nom del titular al compte
-     * @param nombre . Indicam nom del titular
+     * @param nombre Nom del titular
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -160,7 +160,7 @@ public class CCuenta {
 
     /**
      * Metode GET que retorna el tipus d'interes aplicable al compte
-     * @return 
+     * @return Tipus interes
      */
     public double getTipoInterés() {
         return tipoInterés;
@@ -168,7 +168,7 @@ public class CCuenta {
 
     /**
      * Metode SET per indicar el tipus d'interes aplicable al compte corrent
-     * @param tipoInterés - Indicam tipus interes
+     * @param tipoInterés Tipus interes aplicable al compte
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
@@ -176,7 +176,7 @@ public class CCuenta {
 
     /**
      * Metode GET que retorna el numero del compte corrent
-     * @return el numero del compte corrent
+     * @return Numero del compte corrent
      */
     public String getCuenta() {
         return cuenta;
@@ -184,7 +184,7 @@ public class CCuenta {
 
     /**
      * Metode SET per indicar el numero del compte corrent
-     * @param cuenta - Indicam numero de compte
+     * @param cuenta Numero de compte corrent
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
@@ -192,7 +192,7 @@ public class CCuenta {
 
     /**
      * Metode GET que retorna el saldo del compte corrent
-     * @return el saldo del compte
+     * @return Saldo del compte
      */
     public double getSaldo() {
         return saldo;
@@ -200,7 +200,7 @@ public class CCuenta {
 
     /**
      * Metode SET per indicar el saldo del compte corrent
-     * @param saldo - Indicam saldo del compte
+     * @param saldo - Saldo del compte
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
